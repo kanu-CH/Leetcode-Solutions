@@ -26,21 +26,8 @@ public:
             return ans;
         }
 
-    double morePrecision(int n, int precision, int tempSol) {
-        double factor = 1;
-        double ans = tempSol;
-
-        for(int i=0; i<precision; i++) {
-            factor = factor/10;
-
-            for(double j=ans; j*j<n; j= j+factor ){
-                ans = j;
-            }
-        }
-        return ans;
-    }
     int mySqrt(int x) {
         int tempSol = sqrtInteger(x);
-        return morePrecision(x, 3, tempSol); 
+        return tempSol; 
     }
 };

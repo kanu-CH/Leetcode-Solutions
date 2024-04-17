@@ -1,4 +1,4 @@
-class FrontMiddleBackQueue {\
+class FrontMiddleBackQueue {
 public:
     vector<int>ans;
     FrontMiddleBackQueue() {

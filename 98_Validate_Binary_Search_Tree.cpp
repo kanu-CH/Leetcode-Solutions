@@ -24,7 +24,6 @@ public:
         vector<int> v;
         inorder(root,v);
 
-
         for(int i=1;i<v.size();i++){
             if(v[i] <= v[i-1]){
                 return false;

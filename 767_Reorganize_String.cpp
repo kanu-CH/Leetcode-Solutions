@@ -1,6 +1,6 @@
 class Solution {
 public:
-    std::string reorganizeString(std::string s) {
+    string reorganizeString(string s) {
         // Step 1: Count the frequency of each character
         unordered_map<char, int> frequency;
         for (char ch : s) {
